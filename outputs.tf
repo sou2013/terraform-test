@@ -14,10 +14,7 @@ output "db_ip" {
   }
 }
 
-output "lb_hostname_http" {
-  value = aws_lb.http.dns_name
-}
+#output "lb_hostname_http" {
+#  value = aws_lb.http.dns_name
+#}
 
-output "lb_hostname_db" {
-  value = aws_lb.db.dns_name
-}

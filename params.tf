@@ -1,7 +1,7 @@
 # parms file for aws ec2 cloud
 variable "aws_region" {
   description = "AWS region to launch servers."
-  default     = "us-west-2"
+  default     = "us-east-1"
 }
 
 
@@ -25,7 +25,8 @@ variable "network_http" {
 # Set number of instance
 variable "http_instance_names" {
   type    = set(string)
-  default = ["instance-http-1", "instance-http-2","instance-http-3"]
+  default = ["instance-http-1"]
+ # default = ["instance-http-1", "instance-http-2","instance-http-3"]
 }
 
 #### DB PARAMS
@@ -40,5 +41,6 @@ variable "network_db" {
 # Set number of instance
 variable "db_instance_names" {
   type    = set(string)
-  default = ["instance-db-1", "instance-db-2"]
+default = ["instance-db-1"]
+#  default = ["instance-db-1", "instance-db-2"]
 }
